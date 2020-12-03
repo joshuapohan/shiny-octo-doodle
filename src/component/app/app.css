@@ -111,14 +111,26 @@
 
 .app-separator-box{
     position: relative;
-    border-radius: 25px;
-    padding:5px;
-    abackground-color: #f5f5f5;
+    padding:10px;
     font-size: 50px;
     color: #ffffff;
-    width: 50%;
-    margin: 0;
+    width: 100%;
     text-shadow: 2px 2px 1px #3fc1c9, 4px 4px 1px #fc5185;
+    box-shadow: 5px 5px 1px #fc5185, -5px -5px 1px #3fc1c9, 10px 10px 1px #3fc1c9, -10px -10px 1px #fc5185;
+}
+
+.app-neon-text-shadow{
+    text-shadow: 2px 2px 1px #3fc1c9, 4px 4px 1px #fc5185;
+}
+
+.app-large-icon-wrapper{
+    padding-top:20px;
+    text-align: center !important;
+}
+
+.app-large-icon{
+    color: white;
+    font-size: 50px;
 }
 
 .app-background-pattern{
@@ -166,6 +178,34 @@
     box-shadow: -8px -8px 1px #fc5185, 8px 8px 1px #3fc1c9;
 }
 
+.app-qr-wrapper{
+    margin-top: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 30px;
+}
+
+.app-qr {
+    width: 50%;
+    text-align: center;
+}
+
+.app-qr > img{
+    max-width: 50%;
+}
+
+.app-qr-text {
+    color: white;
+    font-size: 20px;
+}
+
+.app-footer-content{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 @media screen and (max-width: 768px){
     .app-grid-wrapper{
         display: grid;
@@ -174,6 +214,10 @@
         'app-right-box';
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, auto);
+    }
+
+    .app-qr > img{
+        max-width: 100%;
     }
 
     .left-image{
@@ -208,5 +252,6 @@
 
     .app-separator-box{
         width: 100%;
+        font-size: 20px;
     }
 }
